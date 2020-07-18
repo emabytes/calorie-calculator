@@ -46,6 +46,7 @@ function calculate() {
   //kj = kcal * 4.184
   let bmrKj = bmrKcal * 4.184;
   let totalKj = totalKcal * 4.184;
+  document.getElementById("warning").innerHTML = "";
   document.getElementById("bmr-kcal").innerHTML = Math.floor(bmrKcal);
   document.getElementById("bmr-kj").innerHTML = Math.floor(bmrKj);
   document.getElementById("total-kcal").innerHTML = Math.floor(totalKcal);
