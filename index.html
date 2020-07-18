@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form action="#">
+        <h1>Calorie <span>Calculator</span> </h1>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age">
+        <label for="height">Height (in cm): </label>
+        <input type="number" name="height" id="height">
+        <label for="weight">Weight (in kg): </label>
+        <input type="number" name="weight" id="weight">
+        <div id="radio">
+            <input type="radio" name="gender" id="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+        </div>
+        <label for="activity">Daily work and free time activity</label>
+        <select name="activity" id="activity">
+            <option value="0.95">Sleeping</option>
+            <option value="1.2">Only sitting or lying down</option>
+            <option value="1.5">Sedentary activity with little or no physical activity during leisure time, e.g. office
+                job</option>
+            <option value="1.7">Mostly sedentary job with occasional walking/standing, e.g. students, drivers</option>
+            <option value="1.9">Predominantly walking or standing job, e.g. waiters</option>
+            <option value="2.2">Physically demanding job</option>
+            <input class="btn" type="button" value="Submit" onclick="calculate()">
+        </select>
+        <table>
+            <tr>
+                <th></th>
+                <th>kcal</th>
+                <th>kJ</th>
+            </tr>
+            <tr>
+                <td>BMR</td>
+                <td id="bmr-kcal"></td>
+                <td id="bmr-kj"></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td id="total-kcal"></td>
+                <td id="total-kj"></td>
+            </tr>
+        </table>
+        <h4 id="warning"></h4>
+        <p id="footer">The results of this calculator are based on an estimated average and mistakes are possible.
+            <span>
+                The
+                Harris-Benedict Equation was one of the earliest equations used to calculate basal metabolic rate (BMR),
+                which is the amount of energy expended per day at rest.
+            </span>
+            <span> The value obtained from these equations is the estimated number of calories a person can consume in a
+                day to maintain their body-weight, assuming they remain at rest.</span>
+        </p>
+    </form>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

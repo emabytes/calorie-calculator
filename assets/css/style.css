@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2vh;
+}
+form {
+  min-height: 50vh;
+  max-width: 30%;
+  background: linear-gradient(10deg, #000428, #004e92);
+  color: rgb(211, 182, 187);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 0;
+  font-family: "Quicksand", sans-serif;
+  box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.55);
+}
+form h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 1vh;
+}
+form h1 span {
+  display: block;
+}
+input,
+select {
+  outline: none;
+  border: none;
+  padding: 5px 1%;
+  font-size: 1em;
+  background: rgb(211, 182, 187);
+  border-radius: 3px;
+  margin-bottom: 1vh;
+  font-family: "Quicksand", sans-serif;
+}
+select {
+  width: 60%;
+  margin-bottom: 3vh;
+}
+label {
+  padding-bottom: 5px;
+}
+table {
+  width: 90%;
+  padding-bottom: 2vh;
+}
+th {
+  background-color: rgba(215, 215, 218, 0.5);
+}
+td {
+  background-color: rgba(215, 215, 218, 0.3);
+}
+#radio {
+  display: inline;
+  padding-bottom: 2vh;
+}
+#radio label {
+  padding-right: 20px;
+}
+[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+#footer {
+  font-size: 0.8em;
+  width: 90%;
+}
+#footer span:first-of-type {
+    display: block;
+    padding: 1vh 0;
+}
+.btn {
+  padding: 8px;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  text-transform: uppercase;
+  outline: none;
+  margin-bottom: 3vh;
+  transition: all 0.5s;
+  background-color: rgb(232, 232, 232);
+}
+.btn:hover {
+  background-color: rgba(215, 215, 218, 0.4);
+}
+.btn:focus {
+  outline: none;
+}
+h4 {
+    margin: 0;
+    font-size: 1.1em;
+    color: rgb(211, 69, 117)
+}
